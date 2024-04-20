@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_uts/home/allmenu.dart';
 import 'package:flutter_uts/home/card.dart';
 
 class MealDealsMenu extends StatefulWidget {
@@ -51,10 +52,10 @@ class _MealDealsMenuState extends State<MealDealsMenu> {
       child: Column(
         children: [
           // most popular dan see all
-          const Row(
+          Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Padding(
+              const Padding(
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 child: Text(
                   "Meal Deals",
@@ -65,8 +66,16 @@ class _MealDealsMenuState extends State<MealDealsMenu> {
                 ),
               ),
               Padding(
-                padding: EdgeInsets.symmetric(horizontal: 16),
-                child: Text(
+              padding: EdgeInsets.symmetric(horizontal: 16),
+              child: TextButton(
+                onPressed: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const AllMenu(),
+                    ),
+                  );
+                },
+                child: const Text(
                   "see all",
                   style: TextStyle(
                     color: Colors.blue,
@@ -74,6 +83,7 @@ class _MealDealsMenuState extends State<MealDealsMenu> {
                   ),
                 ),
               ),
+            ),
             ],
           ),
           const SizedBox(
