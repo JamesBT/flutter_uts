@@ -1,0 +1,28 @@
+name: flutter_uts
+description: "A new Flutter project."
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: '>=3.3.3 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+    
+  carousel_slider: ^4.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - lib/images/batagor.jpg
+    - lib/images/jiwatoast.jpg
+    - lib/images/kfc.jpg
+    - lib/images/nasgor.jpg
+    - lib/images/ramen.png
+    - lib/images/salad.jpg
