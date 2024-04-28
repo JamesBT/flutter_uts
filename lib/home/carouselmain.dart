@@ -57,7 +57,7 @@ class _CarouselMainPageState extends State<CarouselMainPage> {
                 return Container(
                   decoration: BoxDecoration(
                     image: DecorationImage(
-                      image: NetworkImage(imageUrl),
+                      image: AssetImage(imageUrl),
                       fit: BoxFit.cover,
                     ),
                   ),
